@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <!-- Enlace al archivo CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    .navbar-brand {
+      color: white; /* Color del texto */
+    }
+    .navbar-nav {
+      margin-left: auto; /* Mueve los elementos del menú a la derecha */
+    }
+    .nav-link {
+      font-size: 18px; /* Tamaño de fuente en píxeles */
+      font-weight: bold; /* Texto en negrita */
+      text-decoration: none; /* Eliminar subrayado predeterminado */
+      transition: text-decoration 0.3s; /* Transición suave */
+    } 
+    /* Fondo naranja rojizo */
+    body {
+      background-color: #ff6347; /* Color naranja rojizo */
+    }
+    /* Estilos adicionales para centrar el navbar */
+    .navbar {
+      justify-content: center;
+    }
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    /* Fondo blanco solo para el contenido */
+    .content-section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px; /* Añadido para bordes redondeados */
+      color: black; /* Color del texto */
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-orange-red"> <!-- Cambiado a bg-orange-red -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="acerca.html">Acerca de mí</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="educacion.html">Educación</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="experiencia.html">Experiencia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="lenguajes.html">Lenguajes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="proyectos.html">Proyectos</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Línea divisora en forma de T -->
+<div style="width: 100%; text-align: center;">
+  <hr style="width: 80%; margin-top: 0; margin-bottom: 1rem; border-top: 2px solid white;">
+</div>
+
+<!-- Contenido de la página -->
+<div class="container content-section">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="img/trivia.png" alt="Trivial" style="max-height: 300px; width: auto;">
+      <p>Durante mi primer año en la universidad, participé en un proyecto de trivia que incluía un sistema de clasificación ELO para ajustar la dificultad de las preguntas y nos permitía establecer un sistema de podio. El cual ganó la categoría de primer año en la feria.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="img/mapa.png" alt="Mapa" style="max-height: 300px; width: auto;">
+      <p>Durante mi segundo año en la universidad, me embarqué en el desarrollo de un emocionante proyecto: un sistema de mapa interactivo de eventos. Este proyecto fue una oportunidad emocionante para fusionar tecnología y experiencia social, permitiendo a los usuarios colocar pines en el mapa para marcar eventos, así como comentar y valorar su experiencia en ellos. La idea detrás de este sistema era crear una plataforma dinámica y colaborativa donde la comunidad pudiera descubrir y compartir eventos relevantes, al tiempo que ofrecía la posibilidad de retroalimentación para mejorar la experiencia en futuros eventos. </p>
+    </div>
+  </div>
+</div>
+
+<!-- Enlace al archivo JavaScript de Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
